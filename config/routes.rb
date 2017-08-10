@@ -3,4 +3,7 @@ Rails.application.routes.draw do
 
 root'test_list#top'
 
+# get'/articles' => 'article#index'
+
+
 end

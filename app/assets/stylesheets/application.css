@@ -25,7 +25,14 @@ margin: 0 auto;
 	margin: 0 auto;
 }
 
-
+.back-img{
+	height:100vh;
+		background-image: url(“P1130024.JPG”);
+		background-size: cover;
+	 }
+*{margin: 0;
+	padding: 0;
+}
 .top-name{
 	text-align: center;
 }
