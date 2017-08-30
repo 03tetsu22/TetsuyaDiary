@@ -2,7 +2,10 @@
 <% @articles.each do |article| %>
   <p>タイトル</p>
   <span><%= link_to article.title, "/articles/#{article.id}"%></span>
+  <%= link_to "削除", article_path(article.id), method: :delete %>
   <p>著者</p>
   <span><%= article.author %></span>
   <hr>	
+ 
 <% end %>
+ <%= link_to "新規投稿へ", new_article_path %>

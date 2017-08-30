@@ -28,6 +28,20 @@ def show
   #書き換えるなら紫色を
   #書き方を省略できる
 
+  def edit
+  	@article = Article.find(params[:id])
+  end
+
+  def update
+  	@article = Article.find(params[:id])
+  	@article.update(article_params)
+  	redirect_to article_path(@article)
+  end
+
+  def destroy
+  	@article = Article.find(params[:id])
+  	@article.destroy
+  end
   
 
 end

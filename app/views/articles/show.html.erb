@@ -8,3 +8,8 @@
 
 <h3>著者</h3>
 <%= @article.author %>
+
+<%= link_to "編集する", edit_article_path(@article.id) %>
+
+<%= link_to "削除する", article_path(@article.id), method: :delete, "data-confirm" => "本当に削除しますか？" %>
+<%= link_to "一覧へ", articles_path %>
